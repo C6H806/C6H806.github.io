@@ -58,7 +58,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Name Surname</a></li>
+            <li><a href="index.html">Richard</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
               <ul id="exercises" class="dropdown-menu" role="menu">
@@ -82,21 +82,52 @@
                 <p class="pic">
   <img src="media/about/158.jpg">
   <legend>Here's the picture of the light.</legend>
-        <h3>Things i've learned（D2)</h3>
-        <p>1.How to use the Analog Grayscale Sensor and the Analog Rotation Sensor.</p>
-        <p>I recetive a 27 Pcs Sensor Set!!!</p>
-        <P>2.I know the "arduino uno" is the basic one</P>
-        <p>3.How to get the motor going</p>
-                <p class="pic">
-  <img src="media/about/556.jpg">
-  <legend>Here's the picture of the "27 Pcs Sensor Set".</legend>
-	<p>
-	<a href="#">
+        
+        <pre class="prettyprint linenums">
+            /* Sweep
+        by BARRAGAN <http://barraganstudio.com>
+         This example code is in the public domain.
+
+         modified 8 Nov 2013
+         by Scott Fitzgerald
+         http://www.arduino.cc/en/Tutorial/Sweep
+
+        */
+
+        #include <Servo.h>
+
+        Servo thanoservo;  // create servo object to control a servo
+        // twelve servo objects can be created on most boards
+
+        int degree = 0;    // variable to store the servo position
+        int rotation = 0;
+        int pot = 0;
+
+
+
+        void setup() {
+          thanoservo.attach(9);  // attaches the servo on pin 9 to the servo object
+        }
+
+        void loop() {
+          rotation = analogRead(A0);
+         degree = map(rotation,0,1024,0,181);
+          thanoservo.write(degree);
+          delay(20);
+
+	&lt/pre&gt;</pre>
+        
+        
+        
+        
+	</p>
+	<a href="media/exercise5/Sweep/Sweep.ino">
 	<button type="button" class="btn btn-primary btn-lg">Download the file</button>
 	</a>
-	</p>
-        <p>lololololololololololololololol</p>
-      
+        
+       
+	
+	      
 
     <!-- End of your content -->
 

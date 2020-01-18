@@ -58,7 +58,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Name Surname</a></li>
+            <li><a href="index.html">Richard</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
               <ul id="exercises" class="dropdown-menu" role="menu">
@@ -86,57 +86,57 @@
 	<p>This is the code of the button</p>
    	<pre class="prettyprint linenums">
     
-    /*
-      Button
+        /*
+          Button
 
-      Turns on and off a light emitting diode(LED) connected to digital pin 13,
-      when pressing a pushbutton attached to pin 2.
+          Turns on and off a light emitting diode(LED) connected to digital pin 13,
+          when pressing a pushbutton attached to pin 2.
 
-      The circuit:
-      - LED attached from pin 13 to ground
-      - pushbutton attached to pin 2 from +5V
-      - 10K resistor attached to pin 2 from ground
+          The circuit:
+          - LED attached from pin 13 to ground
+          - pushbutton attached to pin 2 from +5V
+          - 10K resistor attached to pin 2 from ground
 
-      - Note: on most Arduinos there is already an LED on the board
-        attached to pin 13.
+          - Note: on most Arduinos there is already an LED on the board
+            attached to pin 13.
 
-      created 2005
-      by DojoDave <http://www.0j0.org>
-      modified 30 Aug 2011
-      by Tom Igoe
+          created 2005
+          by DojoDave <http://www.0j0.org>
+          modified 30 Aug 2011
+          by Tom Igoe
 
-      This example code is in the public domain.
+          This example code is in the public domain.
 
-      http://www.arduino.cc/en/Tutorial/Button
-    */
+          http://www.arduino.cc/en/Tutorial/Button
+        */
 
-    // constants won't change. They're used here to set pin numbers:
-    const int buttonPin = 2;     // the number of the pushbutton pin
-    const int ledPin =  13;      // the number of the LED pin
+        // constants won't change. They're used here to set pin numbers:
+        const int buttonPin = 2;     // the number of the pushbutton pin
+        const int ledPin =  13;      // the number of the LED pin
 
-    // variables will change:
-    int buttonState = 0;         // variable for reading the pushbutton status
+        // variables will change:
+        int buttonState = 0;         // variable for reading the pushbutton status
 
-    void setup() {
-      // initialize the LED pin as an output:
-      pinMode(ledPin, OUTPUT);
-      // initialize the pushbutton pin as an input:
-      pinMode(buttonPin, INPUT);
-    }
+        void setup() {
+          // initialize the LED pin as an output:
+          pinMode(ledPin, OUTPUT);
+          // initialize the pushbutton pin as an input:
+          pinMode(buttonPin, INPUT);
+        }
 
-    void loop() {
-      // read the state of the pushbutton value:
-      buttonState = digitalRead(buttonPin);
+        void loop() {
+          // read the state of the pushbutton value:
+          buttonState = digitalRead(buttonPin);
 
-      // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
-      if (buttonState == HIGH) {
-        // turn LED on:
-        digitalWrite(ledPin, HIGH);
-      } else {
-        // turn LED off:
-        digitalWrite(ledPin, LOW);
-      }
-    }
+          // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+          if (buttonState == HIGH) {
+            // turn LED on:
+            digitalWrite(ledPin, HIGH);
+          } else {
+            // turn LED off:
+            digitalWrite(ledPin, LOW);
+          }
+        }
 
     
     </pre>
@@ -147,7 +147,15 @@
 	<button type="button" class="btn btn-primary btn-lg">Download the file</button>
 	</a>
 	</p>
-      
+      <h3>Things i've learned（D2)</h3>
+        <p>1.How to use the Analog Grayscale Sensor and the Analog Rotation Sensor.</p>
+        <p>I recetive a 27 Pcs Sensor Set!!!</p>
+        <P>2.I know the "arduino uno" is the basic one</P>
+        <p>3.How to get the motor going</p>
+                <p class="pic">
+  <img src="media/about/556.jpg">
+  <legend>Here's the picture of the "27 Pcs Sensor Set".</legend>
+	<p>
    
     <!-- End of your content -->
 
